@@ -1,5 +1,6 @@
 import './Header.scss';
-import { FaHome, FaSearch } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
+import Search from './Search'
 
 function Header(){
     return ( <header className="header">
@@ -7,15 +8,10 @@ function Header(){
       <FaHome />
     </div>
     <div className="header__text">
-      <h3>Todoist</h3>
+      <h1>Todoist</h1>
     </div>
     <div className="header__search">
-      <div className='search'>
-        <span className='search__icon'>
-            <FaSearch />
-        </span>
-        <input type="text" placeholder='search' className='search__input' />
-      </div>
+      <Search />
     </div>
   </header>)
 }
