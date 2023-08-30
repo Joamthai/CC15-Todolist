@@ -1,4 +1,4 @@
-@import '../index.scss';
+@import '../../index.scss';
 
 .todo {
     display: grid;
@@ -56,4 +56,11 @@
             font-weight: inherit;
         }
     }
+}
+
+
+.todo__container {
+    display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
