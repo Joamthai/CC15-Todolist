@@ -22,4 +22,34 @@
 }
 
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 10px;
+    height: calc(100vh - $header-height);
+}
 
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $grey-light;
+        }
+
+        &__text {
+            font-weight: 500;
+        }
+    }
+}
