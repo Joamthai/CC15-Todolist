@@ -30,26 +30,30 @@
     height: calc(100vh - $header-height);
 }
 
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.accordion {
 
     &__item {
         display: flex;
         align-items: center;
-        gap: 5px;
-        font-size: 2rem;
+        gap: 15px;
+        font-size: 1.8rem;
         padding: 10px;
         border-radius: 4px;
         cursor: pointer;
-
-        &:hover {
-            background-color: $grey-light;
+        font-weight: 900;
+        
+        &__icon {
+            cursor: pointer;
+            transition: 1s;
         }
 
+        &__active {
+            transform: rotate(-90deg);
+        }
+        
+        
         &__text {
-            font-weight: 500;
+            font-weight: inherit;
         }
     }
 }
