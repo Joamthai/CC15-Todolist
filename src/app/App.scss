@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import '../index.scss';
 
 .todo {
     display: grid;
@@ -61,6 +61,7 @@
 
 .todo__container {
     display: flex;
-  flex-direction: column;
-  gap: 5px;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
 }

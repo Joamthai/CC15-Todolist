@@ -1,10 +1,11 @@
 import './App.scss';
-import Header from '../Header';
+import Header from '../components/Header';
 import {FaInbox,FaCalendar,FaCalendarAlt,FaChevronDown} from 'react-icons/fa';
 
-import List from '../List';
-import TodoHeader from '../Todo/TodoHeader';
-import TodoCreate from '../Todo/TodoCreate';
+import List from '../components/List';
+import TodoHeader from '../components/Todo/TodoHeader';
+import TodoCreate from '../components/Todo/TodoCreate';
+import TodoList from '../components/Todo/TodoList';
 // import Listitem from './Listitem';
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <main className='todo__container'>
           <TodoHeader/>
           <TodoCreate/>
+          <TodoList/>
           
         
         </main>
