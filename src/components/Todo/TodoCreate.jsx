@@ -17,20 +17,15 @@ import styles from './TodoCreate.module.scss';
 function TodoCreate() {
   // HOOK FN
   const [isOpenForm, setIsOpenForm] = useState(false)
-  console.log(isOpenForm)
-
-  let active = true
 
   // #2 : JS Function (Logic)
   const handleClick = function(event) {
-    console.log('clicked')
     setIsOpenForm(!isOpenForm)
-    // active = !active;
-    // console.log('clicked', active)
   }
+
   return (
     <>
-    {isOpenForm ?  <TodoForm /> :
+    {isOpenForm ?  <TodoForm textSubmit='Add Task'/> :
     (<div className={styles.todo__create} onClick={handleClick}>
       <div className={styles.todo__create__button}>
         <HiPlus />
