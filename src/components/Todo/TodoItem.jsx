@@ -10,7 +10,7 @@ function TodoItem({id, task, done, date, deleteTodo, editTodo}) {
 
     // const {task, done, date} = props
     const [isOpenForm, setIsOpenForm] = useState(false);
-    console.log(id)
+    // console.log(id)
 
     const handleClick = function () {
         setIsOpenForm(!isOpenForm);
@@ -19,7 +19,7 @@ function TodoItem({id, task, done, date, deleteTodo, editTodo}) {
     const toggleStatus = () => {
       const newTodoObj = {id, task, date, status: !done}
       editTodo(id, newTodoObj)
-      console.log(newTodoObj)
+      // console.log(newTodoObj)
     }
 
   return (
